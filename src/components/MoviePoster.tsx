@@ -17,7 +17,7 @@ export const MoviePoster = ({ movie }: Props) => {
         height:420,
 
     }}>
-        <Text>{ movie.title}</Text>
+        {/* <Text>{ movie.title}</Text> */}
         <View style={styles.imageContainer}>
             <Image
                 source={{  uri }}
