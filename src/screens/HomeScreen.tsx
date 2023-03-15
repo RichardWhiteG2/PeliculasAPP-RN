@@ -12,7 +12,7 @@ const {width: windowWidth }= Dimensions.get('window');
 
 export const HomeScreen = () => {
   
-  const { peliculasEnCine, isLoading } = useMovies();
+  const { peliculasEnCine,peliculasPopulares, isLoading } = useMovies();
   //console.log(peliculasEnCine[0]?.title)
 
   const { top }= useSafeAreaInsets(); 
@@ -42,9 +42,7 @@ export const HomeScreen = () => {
           />
   
         </View>
-          <HorizontalSlider title="En Cine" movies={peliculasEnCine}/>
-          <HorizontalSlider  movies={peliculasEnCine}/>
-          <HorizontalSlider title="Terror" movies={peliculasEnCine}/>
+          <HorizontalSlider title="Populares" movies={peliculasPopulares}/>
         </View>
     </ScrollView>
     
